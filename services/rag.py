@@ -11,6 +11,7 @@ from langchain.tools import tool
 
 from langchain.agents import create_agent
 
+import ast
 
 
 from dotenv import load_dotenv
@@ -91,6 +92,10 @@ class TranscriptRAGAgent:
 
         print("\n")
         print("------------ans to your query: ", query, " ------------")
-        print("this is result: ", final_answer)
+        data = ast.literal_eval(final_answer)
+        data = data[0]["text"]
+        print("this is result: ", data)
+        print("type of", type(final_answer))
+        print("type of", type(data))
 
 
