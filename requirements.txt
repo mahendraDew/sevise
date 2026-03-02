@@ -1,0 +1,17 @@
+yt_dlp
+pyttsx3
+SpeechRecognition
+
+faster-whisper
+ffmpeg-python
+
+faiss-cpu
+sentence-transformers
+numpy
+pydantic
+
+
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
